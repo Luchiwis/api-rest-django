@@ -4,6 +4,7 @@ from . import views
 
 urlpatterns = [
     # path('admin/', admin.site.urls),
-    path('api/<str:a>/', views.index),
+    path('api/<int:a>/', views.index),
+    path('api/', views.index),
     path('', lambda req: redirect('api/'))
 ]
